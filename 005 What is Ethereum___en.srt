@@ -1,0 +1,264 @@
+1
+00:00:00,840 --> 00:00:06,780
+We now have a better understanding of one of the original design goals of etherial, with that in mind,
+
+2
+00:00:06,810 --> 00:00:12,320
+we're now going to continue and start talking about exactly what Ethereum is and how we work with it.
+
+3
+00:00:12,990 --> 00:00:17,130
+This is going to be our first description of many of the Ethereum system.
+
+4
+00:00:17,400 --> 00:00:22,440
+And I say the first of many, because this is going to be kind of a primitive basic description of a
+
+5
+00:00:22,440 --> 00:00:22,910
+theorem.
+
+6
+00:00:23,280 --> 00:00:28,140
+And as we go throughout the course, we're going to come back and address more and more complicated
+
+7
+00:00:28,140 --> 00:00:30,110
+topics in the Ethereum ecosystem.
+
+8
+00:00:30,390 --> 00:00:35,940
+So, again, this is our first taste and we're going to come back again and again and freshen up or
+
+9
+00:00:35,940 --> 00:00:39,430
+kind of sharpen our understanding of different pieces of this puzzle.
+
+10
+00:00:40,260 --> 00:00:42,060
+So let's take a look at this diagram right here.
+
+11
+00:00:42,510 --> 00:00:46,980
+It's kind of a complicated diagram, but I want to focus on some of these notes.
+
+12
+00:00:46,980 --> 00:00:48,510
+I have off to the right hand side.
+
+13
+00:00:49,470 --> 00:00:53,550
+We're going to talk about each of these notes starting at the top and working our way down to the bottom.
+
+14
+00:00:53,820 --> 00:00:56,190
+And I'm going to do my best not to just read the text on here.
+
+15
+00:00:56,370 --> 00:00:59,440
+They're kind of prompts and I'm going to discuss further about each of them.
+
+16
+00:01:00,330 --> 00:01:04,530
+So the first thing we need to understand is that when we work with the theorem, we are working with
+
+17
+00:01:04,530 --> 00:01:06,240
+a network of computers.
+
+18
+00:01:06,900 --> 00:01:12,090
+These networks are used to transfer money between different parties like you and me, and they're also
+
+19
+00:01:12,090 --> 00:01:13,140
+used to store data.
+
+20
+00:01:13,800 --> 00:01:19,410
+The transfer of money and the storage of data are what allows us to create interesting applications,
+
+21
+00:01:19,410 --> 00:01:21,580
+which, remember, is the entire goal of etherial.
+
+22
+00:01:23,100 --> 00:01:26,970
+The second thing to understand is that there are many different Ethereum networks.
+
+23
+00:01:27,510 --> 00:01:33,120
+When you read about Ethereum in the news, you usually hear about, oh, the price of either coins is
+
+24
+00:01:33,120 --> 00:01:38,130
+so-and-so dollars or you might hear about deploying apps to the theory and block chain or the entire
+
+25
+00:01:38,130 --> 00:01:38,590
+network.
+
+26
+00:01:39,180 --> 00:01:46,170
+In reality, there's one main Ethereum network that everyone uses for deployment of production applications,
+
+27
+00:01:46,380 --> 00:01:51,010
+and it's where ether coins are actually worth US dollars or real money, I should say.
+
+28
+00:01:51,780 --> 00:01:54,800
+However, there are many other Ethereum networks out there.
+
+29
+00:01:55,500 --> 00:02:00,780
+There are test networks, so networks that are used solely for testing code and testing transactions.
+
+30
+00:02:01,290 --> 00:02:06,930
+You can even create your own private Ethereum network on your own computer that is restricted to just
+
+31
+00:02:06,930 --> 00:02:07,200
+you.
+
+32
+00:02:07,770 --> 00:02:11,410
+Or you can make your own network and open it to other people as well.
+
+33
+00:02:11,790 --> 00:02:15,120
+The point is that there's not just one Ethereum network out there.
+
+34
+00:02:15,330 --> 00:02:15,900
+There's many.
+
+35
+00:02:16,260 --> 00:02:19,830
+And even in this course, we will be creating our own little network.
+
+36
+00:02:21,600 --> 00:02:25,260
+Next networks are formed by one or more notes.
+
+37
+00:02:25,270 --> 00:02:27,870
+And this goes coupled with the next note on here.
+
+38
+00:02:28,380 --> 00:02:33,450
+A node is a machine that is running an Ethereum client AC machine.
+
+39
+00:02:33,450 --> 00:02:37,980
+I'm talking about a desktop or a laptop or any type of computer, really.
+
+40
+00:02:38,790 --> 00:02:44,520
+So we take a node, we install some software on it, we run that software and then it connects to an
+
+41
+00:02:44,520 --> 00:02:48,490
+Ethereum network and starts becoming a part of the network overall.
+
+42
+00:02:49,650 --> 00:02:54,240
+All these networks connect, all these nodes connect together to form the actual network.
+
+43
+00:02:55,890 --> 00:03:02,340
+Next, anyone can run a note, so there's not just some specific set of people out there or important
+
+44
+00:03:02,340 --> 00:03:07,640
+companies who run nodes on the real Ethereum network, no, anyone can create one.
+
+45
+00:03:07,650 --> 00:03:08,700
+You can create a node.
+
+46
+00:03:08,700 --> 00:03:09,660
+I can create node.
+
+47
+00:03:10,170 --> 00:03:14,640
+All we have to do is turn on our laptop, download this client software and run it.
+
+48
+00:03:14,640 --> 00:03:17,100
+And boom, we have a locally hosted node.
+
+49
+00:03:18,910 --> 00:03:25,000
+Each node that we create or I should say each node on the network has a full and separate copy of the
+
+50
+00:03:25,000 --> 00:03:25,610
+block chain.
+
+51
+00:03:26,350 --> 00:03:31,300
+We haven't talked about the block chain too much just yet, but that will be a huge topic of discussion
+
+52
+00:03:31,300 --> 00:03:32,120
+throughout the course.
+
+53
+00:03:32,350 --> 00:03:37,300
+So for right now, let me give you a very basic description of the block chain we're going to stay for
+
+54
+00:03:37,300 --> 00:03:43,330
+right now that we can think of the block chain as being like a database that stores a record of every
+
+55
+00:03:43,330 --> 00:03:45,850
+movement of money between different parties.
+
+56
+00:03:46,030 --> 00:03:47,530
+And it's also where we store data.
+
+57
+00:03:48,610 --> 00:03:54,130
+Again, the key thing to keep in mind here is that the block chain can be considered to be a simple
+
+58
+00:03:54,130 --> 00:03:55,730
+database and nothing else.
+
+59
+00:03:57,010 --> 00:03:57,390
+All right.
+
+60
+00:03:57,400 --> 00:04:00,320
+So that's our first taste of what Nithari network is.
+
+61
+00:04:00,460 --> 00:04:04,810
+Again, I just want to throw some of these very basic descriptions and definitions out there, and it's
+
+62
+00:04:04,810 --> 00:04:07,930
+going to help ground us throughout the next task that we're going to go through.
+
+63
+00:04:08,440 --> 00:04:09,500
+So let's pause right here.
+
+64
+00:04:09,700 --> 00:04:13,660
+We're going to continue the next video and we're going to start getting our hands dirty in that next
+
+65
+00:04:13,660 --> 00:04:14,110
+section.
+
+66
+00:04:14,110 --> 00:04:15,510
+So I'll see you in just a minute.
+
